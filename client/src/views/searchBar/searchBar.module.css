@@ -1,0 +1,42 @@
+/* 
+    .holder{
+      border-radius: 40px;
+      border:1px black;
+      text-decoration: none;
+      padding:2px;
+      margin-right: 10px;
+    }
+ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+  width: 250px;
+}
+.navbar {
+  font-size: 1.25rem;
+  color: black;
+  line-height: 1;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: auto;
+  font-family: "single day";
+  width: 150px;
+}
+
+.btn {
+  color: yellow;
+  background-color: transparent;
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  padding: 10px
+}
+.btn:hover {
+  color: rgb(60, 2, 75);
+  background-color: yellow
+}

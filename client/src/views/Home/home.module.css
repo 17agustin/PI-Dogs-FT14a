@@ -1,0 +1,218 @@
+.link {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: space-around;
+}
+.header {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.test {
+  background-image: url("../../images/Dog-wp.gif");
+  height: 100vh;
+}
+
+.test2 {
+  background-color: black;
+}
+
+
+.btn {
+  color: yellow;
+  background-color: rgb(60, 2, 75);
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgb(60, 2, 75);
+  background-color: yellow;
+}
+
+.select {
+  color: yellow;
+  background-color: rgb(60, 2, 75);
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select:hover{
+  -webkit-box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
+  -moz-box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
+  box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
+  transition: 300ms;
+}
+
+
+.select2 {
+  color: yellow;
+  background-color: rgb(60, 2, 75);
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  margin-right: 100px;
+  margin-top: 10px;
+  width: 150px;
+}
+.select2:hover{
+  -webkit-box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
+  -moz-box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
+  box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
+  transition: 300ms;
+}
+
+
+.btnPage {
+  color: yellow;
+  background-color: rgb(60, 2, 75);
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
+  font-size: 40px;
+  cursor: pointer;
+}
+.btnPage:hover {
+  color: rgb(60, 2, 75);
+  background-color: yellow;
+}
+
+.btnCont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.inv{
+  visibility: hidden;
+}
+
+.PageN{
+  color: yellow;
+  background-color: rgb(60, 2, 75);
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
+  font-size: 35px;
+}
+
+.temp{
+  color: yellow;
+  background-color: rgb(60, 2, 75);
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 25px;
+  width: auto;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
+  font-size: medium;
+
+    -webkit-box-shadow: 2px 2px 21px -1px rgb(206, 209, 6);
+    -moz-box-shadow: 2px 2px 21px -1px rgb(206, 209, 6);
+    box-shadow: 2px 2px 21px -1px rgb(206, 209, 6);
+    transition: 300ms;
+
+  
+}
+
+
+.btnB {
+  color: yellow;
+  background-color: rgb(60, 2, 75);
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
+  cursor: pointer;
+}
+.btnB:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(231, 0, 0);
+  -webkit-box-shadow: 2px 2px 21px 4px rgb(231, 0, 0);
+  -moz-box-shadow: 2px 2px 21px 4px rgb(231, 0, 0);
+  box-shadow: 2px 2px 21px 4px rgb(231, 0, 0);
+  transition: 300ms;
+}
+
+
+.btnFL {
+  color: yellow;
+  background-color: rgb(60, 2, 75);
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
+  cursor: pointer;
+}
+.btnFL:hover {
+  color: rgb(60, 2, 75);
+  background-color: yellow;
+}

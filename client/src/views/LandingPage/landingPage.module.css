@@ -1,0 +1,97 @@
+.container{
+    height:100vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("../../images/perro.jpg");
+    
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+
+  border-radius: 20px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:yellow;
+    transition: 500ms;
+    border-color: rgb(92, 12, 92);
+    list-style: none;
+    text-decoration: none;
+    border-radius: 5px;
+    height:25%;
+    width: 25%;
+    border-style:double;
+    font-family: monospace;
+    font-size: xx-large;
+
+  }
+  .btn:hover{
+    color: yellow;
+    background-color: transparent;
+    -webkit-box-shadow: 2px 2px 21px 8px rgba(167, 0, 209, 1);
+    -moz-box-shadow: 2px 2px 21px 8px rgba(167, 0, 209, 1);
+    box-shadow: 2px 2px 21px 8px rgba(167, 0, 209, 1);
+  }
+
+.text{
+  color:yellow;
+  font-family: 'single day', "cursive";
+  font-style: italic;
+  font-size:xx-large;
+  font:bolder
+}
+
+
+
+.typingDemo {
+  width: 52ch;
+  animation: typing 4s steps(52);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2em;
+  color:yellow
+}
+.typingDemo1 {
+  width: 53ch;
+  animation: typing 4s steps(53);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2em;
+  color:yellow
+}
+.typingDemo2 {
+  width: 32ch;
+  animation: typing 4s steps(32);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2em;
+  color:yellow
+}
+
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
