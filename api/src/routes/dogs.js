@@ -82,7 +82,7 @@ router.get("/", async (req, res,next) => {
 router.get("/:id", async function (req, res) {
   const { id } = req.params;
   try {
-    let found = await Dog.findByPk(id, { include: Temperament });
+    let found = await Dog.findByPk(id, { include: Temperament }); // findByPk({where: {alphacode : id}})
     console.log("searched in db");
     return res.send(found);
   } catch (error) {
@@ -102,7 +102,7 @@ router.get("/:id", async function (req, res) {
       return res.send(finalDoge);
     }
     console.log("Dog not found");
-    return res.send("Missing Dog😥");
+    return res.send("dog not found");
   }
 });
 

@@ -24,7 +24,6 @@
   background-color: black;
 }
 
-
 .btn {
   color: yellow;
   background-color: rgb(60, 2, 75);
@@ -39,7 +38,6 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
   cursor: pointer;
 }
 .btn:hover {
@@ -62,13 +60,12 @@
   align-items: center;
   justify-content: center;
 }
-.select:hover{
+.select:hover {
   -webkit-box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
   -moz-box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
   box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
   transition: 300ms;
 }
-
 
 .select2 {
   color: yellow;
@@ -84,13 +81,12 @@
   margin-top: 10px;
   width: 150px;
 }
-.select2:hover{
+.select2:hover {
   -webkit-box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
   -moz-box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
   box-shadow: 2px 2px 21px -1px rgb(185, 0, 231);
   transition: 300ms;
 }
-
 
 .btnPage {
   color: yellow;
@@ -106,7 +102,6 @@
   align-items: center;
   justify-content: space-between;
   margin: 30px;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
   font-size: 40px;
   cursor: pointer;
 }
@@ -115,17 +110,17 @@
   background-color: yellow;
 }
 
-.btnCont{
+.btnCont {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.inv{
+.inv {
   visibility: hidden;
 }
 
-.PageN{
+.PageN {
   color: yellow;
   background-color: rgb(60, 2, 75);
   transition: 500ms;
@@ -138,11 +133,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
   font-size: 35px;
 }
 
-.temp{
+.temp {
   color: yellow;
   background-color: rgb(60, 2, 75);
   transition: 500ms;
@@ -156,17 +150,13 @@
   align-items: center;
   justify-content: space-between;
   margin: 30px;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
   font-size: medium;
 
-    -webkit-box-shadow: 2px 2px 21px -1px rgb(206, 209, 6);
-    -moz-box-shadow: 2px 2px 21px -1px rgb(206, 209, 6);
-    box-shadow: 2px 2px 21px -1px rgb(206, 209, 6);
-    transition: 300ms;
-
-  
+  -webkit-box-shadow: 2px 2px 21px -1px rgb(206, 209, 6);
+  -moz-box-shadow: 2px 2px 21px -1px rgb(206, 209, 6);
+  box-shadow: 2px 2px 21px -1px rgb(206, 209, 6);
+  transition: 300ms;
 }
-
 
 .btnB {
   color: yellow;
@@ -182,7 +172,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
   cursor: pointer;
 }
 .btnB:hover {
@@ -193,7 +182,6 @@
   box-shadow: 2px 2px 21px 4px rgb(231, 0, 0);
   transition: 300ms;
 }
-
 
 .btnFL {
   color: yellow;
@@ -209,7 +197,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
   cursor: pointer;
 }
 .btnFL:hover {

@@ -50,11 +50,14 @@ const CargarTemperamentos = async () => {
 };
 
 // Funcion para pasar la data de libras a kilos, sera usada en mapDogs
-const lbtoKg = (weight) =>{
-  let weight1 = weight.split(" - ")
-  let a = Math.ceil(weight1[0] * 0.453592)
-  let b = Math.ceil(weight1[1] * 0.453592)
-  var fw = [a,b].join(" - ")
+const lbtoKg = (weight) =>{ 
+  let weight1 = weight.split(" - ") //divido el string que recibo como dato
+  var a,b;
+  if(isNaN(parseInt(weight1[0]))) a = 18; else a=parseInt(weight1[0]) // un caso especial en que el peso minimo es "up"
+  if(isNaN(parseInt(weight1[1]))) b = a; else b=parseInt(weight1[1]) // casos donde no haya un peso maximo
+  a = Math.floor(a * 0.453592)
+  b = Math.ceil(b * 0.453592)
+  var fw = [a,b].join(" - ") // lo vuelvo a envolver en string para enviarlo como info
   return fw;
 }
 
@@ -65,7 +68,7 @@ const mapDogs = (dogs) => {
     dogs &&
     dogs.map((doggo) => { 
       if (!doggo.temperament)
-        doggo.temperament = " ";
+        doggo.temperament = "";
       return (newDoggo = {
         weight: lbtoKg(doggo.weight.imperial), // el peso en metrico, trae ciertos problemas (NaN)
         id: doggo.id,

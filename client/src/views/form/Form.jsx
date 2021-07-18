@@ -205,8 +205,7 @@ const validateUrl = (e) => {
           step="0.5"
           onChange={handleChange}
           className={s.input2}
-        ></input>
-        
+        ></input> 
         <label> - </label>
         <input
           type="number"

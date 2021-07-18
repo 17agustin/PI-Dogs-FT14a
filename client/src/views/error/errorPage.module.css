@@ -1,27 +1,30 @@
 .btn {
-    color: yellow;
-    background-color: rgb(60, 2, 75);
-    transition: 500ms;
-    border: rgb(60, 2, 75);
-    height: 30px;
-    width: 120px;
-    border-radius: 5px;
-    padding: 5px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
-  }
-  .btn:hover {
-    color: rgb(60, 2, 75);
-    background-color: yellow;
-  }
+  color: yellow;
+  background-color: rgb(60, 2, 75);
+  transition: 500ms;
+  border: rgb(60, 2, 75);
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgb(60, 2, 75);
+  background-color: yellow;
+  -webkit-box-shadow: 2px 2px 21px 8px rgb(146, 209, 0);
+  -moz-box-shadow: 2px 2px 21px 8px rgb(146, 209, 0);
+  box-shadow: 2px 2px 21px 8px rgb(146, 209, 0);
+}
 
-  .container{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,5 +1,5 @@
 import reducer from './index';
-import { getAllDog, getDogsByQuery, getTemperaments, GET_DOGS_BY_QUERY } from '../actions';
+import { getAllDog, getDogsByQuery} from '../actions';
 
 describe('reducer', () => {
 
@@ -16,7 +16,6 @@ describe('reducer', () => {
   })
 
   it('debe devolver un estado con todos los perros', () => {
-    // fijarse bien las propiedades que tiene que recibir.
     expect(reducer([], getAllDog())).not.toBeUndefined()
   })
 

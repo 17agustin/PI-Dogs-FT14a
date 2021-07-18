@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import s from "./home.module.css";
 import { useDispatch, useSelector } from "react-redux";
+import { Link, useHistory } from "react-router-dom";
 import SingleDogs from "../SingleDog/singleDogs";
+import NavBar from "../NavBar/NavBar";
 import {
   clearHome,
   filterDogsN,
@@ -10,8 +12,8 @@ import {
   orderDogs,
   filterTemp,
 } from "../../actions/index";
-import NavBar from "../NavBar/NavBar";
-import { Link, useHistory } from "react-router-dom";
+
+
 
 
 function Home() {
@@ -22,6 +24,7 @@ function Home() {
   const { push } = useHistory();
 
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getAllDog());
     setPage(1)
@@ -78,12 +81,13 @@ function Home() {
   const handleTemp = (e) => {
     if(selectedTemps.includes(e.target.value)) return
     setSelectedTemps([...selectedTemps, e.target.value]);
-    dispatch(filterTemp(dogs, [e.target.value]));
+    dispatch(filterTemp(dogs, e.target.value));
   };
 
   const closeTemps = (e) => {
     e.preventDefault();
-    setSelectedTemps([]); 
+    setSelectedTemps([]);
+    dispatch(clearHome())
     dispatch(filterTemp());
   };
 
@@ -153,7 +157,7 @@ function Home() {
                 );
               })}
           </ul>
-          {dogs && dogs.length<8 ? <div className={s.container}><button value="all" className={s.btnB} onClick={onfilter}>Back</button></div> : dogs && dogs.length>0 ?<div className={s.btnCont}>
+          {dogs && dogs.length<8 ? <div className={s.container}><button value="all" className={s.btnB} onClick={closeTemps}>Back</button></div> : dogs && dogs.length>0 ?<div className={s.btnCont}>
           <button className={page !== 1 ? s.btnFL : s.inv} onClick={handlePageFL} name="first"> First Page </button>
             <button className={s.btnPage} onClick={handlePage} name="prev">
               ◀

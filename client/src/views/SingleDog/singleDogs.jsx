@@ -5,7 +5,7 @@ import s from "./singleDogs.module.css";
 const SingleDogs = ({ name, id, image, temperaments }) => {
   return (
     <div className={s.container}>
-      <img className={temperaments ? temperaments.length>3 ? s.img : s.img2: s.img2} src={image} width="100%" alt="img not found" />
+      <img className={temperaments ? temperaments.length>6 ? s.img3 : s.img: s.img2} src={image} width="100%" alt="img not found" />
       <div className={s.card}>
         <Link  className={s.btn} to={id === 0 ? "/error" :`/dogs/${id}`}>
           <span>{name}</span>

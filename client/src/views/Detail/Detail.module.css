@@ -1,21 +1,19 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
-  color:yellow;
+  color: yellow;
   justify-content: center;
   align-items: center;
-  
 }
-
-.card{
+.cardtitle {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 80%;
-  height: 80%;
+  align-self: center;
+  justify-content: center;
+  font-family: "single day";
+  font-size: 40px;
 }
 
-.photo{
+.photo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,20 +21,9 @@
   height: 200px;
   margin: 10px;
   -webkit-box-shadow: 2px 2px 21px 5px rgb(161, 47, 255);
-      -moz-box-shadow: 2px 2px 21px 5px rgb(161, 47, 255);
-      box-shadow: 2px 2px 21px 5px rgb(161, 47, 255);
-      transition: 300ms;
+  -moz-box-shadow: 2px 2px 21px 5px rgb(161, 47, 255);
+  box-shadow: 2px 2px 21px 5px rgb(161, 47, 255);
 }
-
-.cardtitle{
-  display: flex;
-  align-self:center;
-  justify-content: center;
-  font-family: "single day";
-  font-size: 40px;
-}
-
-
 
 .img {
   margin-left: 300px;
@@ -47,13 +34,13 @@
   width: 50%;
 }
 
-.temp{
+.temp {
   color: yellow;
   background-color: rgb(60, 2, 75);
   transition: 500ms;
   border: rgb(60, 2, 75);
   height: 25px;
-  width: 90px;
+  width: auto;
   border-radius: 5px;
   padding: 5px;
   margin: 3px;
@@ -62,43 +49,18 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
   font-size: medium;
 }
 
-.tempL{
-  color: yellow;
-  background-color: rgb(60, 2, 75);
-  transition: 500ms;
-  border: rgb(60, 2, 75);
-  height: 25px;
-  width: 150px;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 3px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
-  font-size: medium;
-}
-.tempC{
+.tempC {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 500px;
+  width: auto;
   height: 80px;
 }
-.tempCL{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 700px;
-  height: 80px;
-}
-.ulL{
+
+.ulL {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -106,15 +68,13 @@
   height: 80px;
 }
 
-.ul{
+.ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   width: 500px;
   height: 80px;
 }
-
-
 
 .btnS {
   color: yellow;
@@ -129,48 +89,30 @@
   align-items: center;
   justify-content: center;
   margin: 10px;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
+  cursor: pointer;
 }
 .btnS:hover {
   color: rgb(60, 2, 75);
   -webkit-box-shadow: 2px 2px 21px 5px greenyellow;
-    -moz-box-shadow: 2px 2px 21px 5px greenyellow;
-    box-shadow: 2px 2px 21px 5px greenyellow;
-    transition: 300ms;
+  -moz-box-shadow: 2px 2px 21px 5px greenyellow;
+  box-shadow: 2px 2px 21px 5px greenyellow;
+  transition: 300ms;
   background-color: yellow;
-  cursor:pointer
 }
 
-.data{
+.data {
   color: yellow;
   background-color: rgb(60, 2, 75);
   border: rgb(60, 2, 75);
   height: 40px;
-  width: 150px;
+  width: auto;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
-
-}
-
-.dataA{
-  color: yellow;
-  background-color: rgb(60, 2, 75);
-  border: rgb(60, 2, 75);
-  height: 40px;
-  width: 180px;
-  border-radius: 10px;
-  padding: 5px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-
 }
 
 .btnD {
@@ -186,14 +128,25 @@
   align-items: center;
   justify-content: center;
   margin: 10px;
-  transition: "border-color" 0.15s ease-in-out, "box-shadow" 0.15s ease-in-out;
+  cursor: pointer;
 }
 .btnD:hover {
   color: rgb(60, 2, 75);
   -webkit-box-shadow: 2px 2px 21px 5px rgb(250, 1, 1);
-    -moz-box-shadow: 2px 2px 21px 5px rgb(250, 1, 1);
-    box-shadow: 2px 2px 21px 5px rgb(250, 1, 1);
-    transition: 300ms;
+  -moz-box-shadow: 2px 2px 21px 5px rgb(250, 1, 1);
+  box-shadow: 2px 2px 21px 5px rgb(250, 1, 1);
+  transition: 300ms;
   background-color: rgb(255, 60, 0);
-  cursor:pointer
+}
+
+.noDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pCont {
+  display: flex;
+  justify-content: center;
 }
