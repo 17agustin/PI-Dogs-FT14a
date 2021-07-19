@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import s from "./form.module.css"
 import NavBar from "../NavBar/NavBar"
 function Form() {
-  // EL COMPONENTE FUNCIONA
+  
 
   const DefImg = imaged;
   const expresiones = {

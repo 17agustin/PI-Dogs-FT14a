@@ -5,11 +5,11 @@ describe('reducer', () => {
 
   it('Deberia retornar el estado inicial', () => {
     const initialState = {
-        Dogs : [],
-        Temperaments : [],
-        FavDogs : [],
-        dogDetail : undefined,
-        queryDog: []
+      Dogs: [],
+      Temperaments: [],
+      dogDetail: undefined,
+      deleted: "",
+      updating: false
         
     }
     expect(reducer(undefined, [])).toEqual(initialState)
