@@ -19,6 +19,8 @@ describe('dogs routes', () => {
   }));
   beforeEach(() => Dog.sync({ force: true })
     .then(() => Dog.create(dog)));
+  
+
   describe('GET /temperament', function()  {  //test to the temperament route
     it('should return all temperaments', function () {
       agent.get('/temperament')
@@ -29,6 +31,8 @@ describe('dogs routes', () => {
       })
     });
   });
+
+
   describe('GET /All dogs', function () {  // test to the dogs route
     it('should return the dogs', function(){
       agent.get('/dogs')
@@ -38,6 +42,9 @@ describe('dogs routes', () => {
       expect(res.body).to.have.length.greaterThanOrEqual(8); //should get the dogs
       })
     })});
+
+
+
   describe('GET /dogs/:id', function() {
     it('should has the property name', () =>{
       agent.get('/dogs/1')

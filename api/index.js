@@ -23,7 +23,7 @@ const { CargarTemperamentos } = require('./src/utils/utils.js');
 
 // Syncing all the models at once.
 conn.sync({ force: true  }).then(() => { //EN TRUE PARA BORRAR
-  server.listen(3001, async () => {
+  server.listen(process.env.PORT , async () => {
     console.log('%s listening at 3001');
     await CargarTemperamentos();
     console.log("Temperamentos Precargados") // eslint-disable-line no-console

@@ -37,7 +37,6 @@ function Home() {
   };
 
   const handlePage = (e) => {
-    console.log(page);
     if (e.target.name === "next") {
       if (page === Math.ceil(dogs.length / 8))
         return alert("No hay mas paginas");

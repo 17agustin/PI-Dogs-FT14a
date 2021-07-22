@@ -12,7 +12,7 @@ export const BASE_URL = "http://localhost:3001";
 export function getAllDog() {
   return function (dispatch) {
     return axios
-      .get(`${BASE_URL}/dogs`)
+      .get("/dogs")
       .then((response) => response.data)
       .then((data) => {
         dispatch({ type: GET_ALL_DOGS, payload: data });
@@ -23,7 +23,7 @@ export function getAllDog() {
 export function getDogsByQuery(query) {
   return function (dispatch) {
     return axios
-      .get(`${BASE_URL}/dogs?name=${query}`)
+      .get(`/dogs?name=${query}`)
       .then((response) => response.data)
       .then((data) => {
         dispatch({ type: GET_DOGS_BY_QUERY, payload: data });
@@ -34,7 +34,7 @@ export function getDogsByQuery(query) {
 export function getDogDetail(id) {
   return function (dispatch) {
     return axios
-      .get(`${BASE_URL}/dogs/${id}`)
+      .get(`/dogs/${id}`)
       .then((response) => response.data)
       .then((data) => {
         if (data.created) {
@@ -59,7 +59,7 @@ export function getDogDetail(id) {
 export function getTemperaments() {
   return function (dispatch) {
     return axios
-      .get(`${BASE_URL}/temperament`)
+      .get(`/temperament`)
       .then((response) => response.data)
       .then((data) => {
         dispatch({ type: GET_TEMPERAMENTS, payload: data });
@@ -152,7 +152,7 @@ export function filterTemp(dogs, temps) {
 
 export function deleteDog(id) {
   return function (dispatch) {
-    axios.delete(`${BASE_URL}/delete/${id}`).then((rta) => {
+    axios.delete(`/delete/${id}`).then((rta) => {
       return dispatch({
         type: DELETE_DOG,
         payload: rta.data,

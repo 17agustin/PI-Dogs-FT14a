@@ -60,7 +60,7 @@ function Form() {
         temperaments: temps,
       };
 
-      axios.post("http://localhost:3001/dog", dogi) // Sumbit del perrito
+      axios.post("/dog", dogi) // Sumbit del perrito
         .then((response) => {
           setTimeout(function(){
             alert("dog has been succesfully Created")

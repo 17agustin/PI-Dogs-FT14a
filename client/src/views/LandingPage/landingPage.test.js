@@ -5,7 +5,6 @@ import LandingPage from './landingPage';
 
 
 
-
 configure({adapter: new Adapter()});
 
 describe('<landingPage />',() => {
@@ -19,7 +18,7 @@ describe('<landingPage />',() => {
       expect(wrapper.find('Link')).toHaveLength(1)
     })
 
-    it('Renderiza una imagen', () => {
+    it('Renderiza un div', () => {
       // El orden en el que se encuentran los Labels es importante.
       expect(wrapper.find('div')).toHaveLength(5)
     })
