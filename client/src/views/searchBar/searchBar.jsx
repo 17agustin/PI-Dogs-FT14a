@@ -25,7 +25,7 @@ export default function SearchBar() {
         <input
           className={s.navbar}
           type="text"
-          placeholder="Buscar perro..."
+          placeholder="Search Dog..."
           value={query}
           onChange={handleChange}
         />
